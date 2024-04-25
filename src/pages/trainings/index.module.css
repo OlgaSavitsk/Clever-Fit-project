@@ -1,0 +1,137 @@
+:root {
+    --margin: calc(4 * var(--margin-space));
+    --borderRadius: calc(2 * var(--border-radius));
+    --background: #fafafa;
+}
+
+.training_layout {
+    position: relative;
+    background: var(--ant-form-background);
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+}
+
+.marathon {
+    background: no-repeat center/cover url('../marathon.jpg');
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.alert {
+    position: absolute;
+    width: 395px;
+    align-self: center;
+    bottom: 30px;
+}
+
+:global .ant-btn-lg {
+    font-size: var(--fs-text);
+}
+
+:global .ant-list-grid .ant-col > .ant-list-item {
+    text-align: center;
+    padding-top: var(--pd-16);
+}
+
+.card {
+    background: var(--background);
+    padding: var(--pd-24) 90px;
+    text-align: center;
+}
+
+.card :global .ant-card-actions {
+    background: var(--background);
+}
+
+.pals_title {
+    white-space: wrap;
+    text-align: center;
+}
+
+@media (max-width: 975px) {
+    .trainings_tabs :global .ant-tabs-tab {
+        font-size: var(--fs-text);
+        font-weight: var(--fw-l);
+    }
+
+    .card {
+        padding: var(--pd-24) 40px;
+    }
+
+    .empty :global .ant-space-item {
+        width: 40%;
+    }
+
+    .training_layout :global .ant-tabs-nav-list {
+        column-gap: var(--gap);
+    }
+
+    :global .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 835px) {
+    .card {
+        padding: var(--pd-24) 10px;
+    }
+
+    .card :global .ant-card-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card :global .ant-card-actions {
+        text-align: center;
+    }
+
+    .card :global .ant-card-actions > li:nth-child(2n) {
+        display: flex;
+        margin: 0 var(--pd-24);
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .trainings_tabs {
+        width: 330px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .training_layout {
+        margin: 0 -16px;
+        border-radius: 0;
+    }
+
+    .training_layout :global .ant-tabs-top > .ant-tabs-nav {
+        margin-bottom: 0;
+    }
+
+    .trainings_tabs {
+        width: 330px;
+    }
+
+    .card {
+        padding: var(--pd-24) 0;
+    }
+
+    .alert {
+        position: static;
+        width: 335px;
+        bottom: 16px;
+    }
+
+    .empty :global .ant-space-item {
+        width: 90%;
+    }
+
+    .card :global .ant-card-actions > li:nth-child(2n) {
+        align-self: flex-start;
+    }
+}

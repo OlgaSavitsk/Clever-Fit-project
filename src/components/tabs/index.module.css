@@ -1,0 +1,31 @@
+:root {
+    --spacing: 20px;
+}
+
+.tabs :global .ant-tabs-tab {
+    justify-content: center;
+    width: 50%;
+    padding: 8px 0;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-l);
+}
+
+.tabs :global  .ant-tabs-top > .ant-tabs-nav {
+    margin-bottom: calc(8 * var(--margin));
+}
+
+.tabs :global  .ant-tabs-ink-bar {
+    left: 50%;
+    width: 50%;
+}
+
+@media (max-width: 360px) {
+    .tabs :global  .ant-tabs-small > .ant-tabs-nav .ant-tabs-tab {
+        padding: 10px 0;
+        font-size: var(--fs-base);
+    }
+
+    .tabs :global .ant-tabs-top > .ant-tabs-nav {
+        margin-bottom: calc(6 * var(--margin));
+    }
+}

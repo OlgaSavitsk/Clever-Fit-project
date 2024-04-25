@@ -1,0 +1,9 @@
+.calendar_modal :global .ant-modal-confirm-title {
+    width: 70%;
+}
+
+@media (max-width: 480px) {
+    :global .ant-modal-confirm-error {
+        width: 328px;
+    }
+}

@@ -1,0 +1,48 @@
+:root {
+    --popover-pading: calc(4 * var(--padding-space));
+}
+
+.events {
+    min-height: 84px;
+    max-height: 140px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: scroll;
+}
+
+.overlay {
+    width: 312px;
+    z-index: 0;
+}
+
+.overlay :global .ant-popover-title {
+    padding: var(--popover-pading) var(--paddingRight);
+}
+
+.overlay :global .ant-popover-inner-content {
+    width: 100%;
+}
+
+.popover_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal_pals {
+    position: absolute;
+    top: 75px; 
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        width: 288px;
+    }
+
+    .overlay :global .ant-popover-inner-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

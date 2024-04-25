@@ -1,0 +1,28 @@
+.result_layout :global .ant-result-subtitle {
+    margin: 0 calc(4 * var(--margin-space));
+}
+
+.result_layout :global .ant-result-title {
+    font-weight: var(--fw-m);
+    line-height: var(--line-height);
+    white-space: pre-line;
+}
+
+.result_layout :global .ant-typography {
+    color: var(--ant-text);
+}
+
+.result_layout :global .ant-result-icon {
+    margin-bottom: calc(8 * var(--padding-space));
+}
+
+.result_layout :global .ant-result-extra {
+    margin: var(--pd-24) calc(9 * var(--padding-space)) 0;
+}
+
+:global .ant-result-success .ant-result-icon > .anticon {
+    color: var(--ant-primary-6);
+}
+
+
+

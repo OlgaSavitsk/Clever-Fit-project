@@ -1,0 +1,16 @@
+.loader_wrapper {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(2px);
+    background: var(--mask-modal-bg);
+    z-index: 10;
+}
+
+.loader_wrapper :global(.ant-spin-dot) {
+    height: 20em;
+    width: 20em;
+    transform: translateY(10vh);
+}

@@ -1,0 +1,8 @@
+.ant-result-subtitle {
+    line-height: var(--line-height);
+    letter-spacing: 0.5px;
+}
+
+.ant-result-500 .ant-result-extra {
+    width: auto;
+}

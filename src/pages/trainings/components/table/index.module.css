@@ -1,0 +1,58 @@
+:root {
+    --padding: calc(4 * var(--padding-space));
+}
+
+.table {
+    max-width: 550px;
+    width: 100%;
+    margin-top: var(--padding);
+    z-index: 0;
+}
+
+.table :global .ant-table-thead > tr > th {
+    text-align: left;
+    background: var(--ant-default);
+}
+
+.table :global .ant-table-column-has-sorters {
+    z-index: 0;
+}
+
+
+:global .ant-table-container table > thead > tr:first-child th:last-child {
+    background: none;
+}
+
+:global .ant-table-thead > tr > th[colspan]:not([colspan='1']) {
+    text-align: left;
+}
+
+:global .ant-table table {
+    border-spacing: 12px 0;
+}
+
+:global .ant-table.ant-table-small .ant-table-tbody > tr > td {
+    padding: calc(2 * var(--padding-space)) 0;
+}
+
+@media (max-width: 835px) {
+    .table {
+        max-width: 530px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table {
+        max-width: 336px;
+    }
+
+    .table :global .ant-table.ant-table-small .ant-table-thead > tr > th {
+        font-size: var(--fs-sm);
+    }
+
+    :global .ant-table-container table > thead > tr:first-child th:last-child {
+        background: var(--ant-default);
+    }
+}
+
+

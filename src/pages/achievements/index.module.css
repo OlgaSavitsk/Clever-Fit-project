@@ -1,0 +1,71 @@
+.training_layout {
+    position: relative;
+    background: var(--ant-form-background);
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+    row-gap: calc(2.4 * var(--gap));
+}
+
+.tag_label {
+    display: block;
+    width: 118px;
+}
+
+:global .ant-tag {
+    margin-right: 0;
+}
+
+:global .ant-tag-checkable-checked {
+    background: none;
+}
+
+:global .ant-tag-checkable:active {
+    background: none;
+}
+
+:global .ant-tag-default {
+    border: 1px solid var(--ant-default);
+    background: none;
+}
+
+@media (max-width: 975px) {
+    .trainings_tabs :global .ant-tabs-tab {
+        font-size: var(--fs-text);
+        font-weight: var(--fw-l);
+    }
+
+    .training_layout :global .ant-tabs-nav-list {
+        column-gap: var(--gap);
+    }
+
+    :global .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+        overflow: scroll;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .trainings_tabs {
+        width: 330px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .training_layout {
+        margin: 0 -16px;
+        border-radius: 0;
+    }
+
+    .trainings_tabs {
+        width: 330px;
+    }
+
+    .statistics {
+        padding: var(--pd-16);
+    }
+
+    :global .ant-tag-checkable-checked {
+        padding: 0;
+    }
+
+}

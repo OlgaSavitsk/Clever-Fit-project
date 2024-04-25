@@ -1,0 +1,25 @@
+.ant-tabs-nav-wrap {
+    width: 100%;
+    justify-content: center;
+}
+
+.ant-tabs-tab {
+    font-size: var(--fs-title);
+    font-weight: var(--fw-m);
+}
+
+.ant-tabs-nav-list {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ant-tabs-tab + .ant-tabs-tab {
+    margin: 0;
+}
+
+@media (max-width: 880px) {
+    .ant-tabs-tab {
+        font-size: var(--fs-text);
+        font-weight: var(--fw-l);
+    }
+}

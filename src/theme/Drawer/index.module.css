@@ -1,0 +1,27 @@
+:root {
+    --borderRadius: calc(2 * var(--border-radius));
+    --padding: var(--pd-24)
+}
+
+.ant-drawer-open > .ant-drawer-content-wrapper {
+    border-top-left-radius: var(--borderRadius);
+    overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    :root {
+        --borderRadius: calc(6 * var(--border-radius))
+    }
+    
+    .ant-drawer-open > .ant-drawer-content-wrapper {
+        border-top-right-radius: var(--borderRadius);
+    }
+
+    .ant-drawer-open > .ant-drawer-content-wrapper {
+        overflow: hidden;
+    }
+
+    :global .ant-drawer-body {
+        padding:  var(--pd-24);
+    }
+}

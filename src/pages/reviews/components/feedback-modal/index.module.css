@@ -1,0 +1,16 @@
+.modal_form :global .ant-modal-content {
+    min-height: 247px;
+    height: 100%;
+}
+.modal_form :global .ant-modal-body {
+    padding: 10px 24px 0;
+}
+.modal_form :global .ant-form-item:first-child {
+    margin-bottom: calc(3 * var(--margin-space));
+}
+.modal_form :global .ant-input-lg {
+    font-size: calc(.8 * var(--fs-base));
+}
+.modal_form :global .ant-modal-footer {
+    padding: 12px 24px
+}

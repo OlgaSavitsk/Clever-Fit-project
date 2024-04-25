@@ -1,0 +1,56 @@
+:root {
+    --stat-gap: calc(2.4 * var(--gap));
+}
+
+.statistics_layout {
+    position: relative;
+    background: var(--ant-form-background);
+    border-radius: var(--borderRadius);
+    row-gap: var(--stat-gap);
+}
+
+.list_wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.list_wrapper :global .ant-space-item:nth-child(2) {
+    width: 38%;
+}
+
+.chart_wrapper {
+    border: var(--border-width) solid var(--ant-default);
+    border-radius: var(--border-radius);
+    max-width: 540px;
+    width: 100%;
+    height: 374px;
+}
+
+@media (max-width: 1200px) {
+    .list_wrapper :global .ant-space-item:nth-child(2) {
+        width: 90%;
+    }
+}
+
+@media (max-width: 835px) {
+    .chart_wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .statistics_layout {
+        align-items: center;
+        margin: 0 -16px;
+        border-radius: 0;
+    }
+
+    .list_wrapper {
+        align-items: center;
+    }
+
+    .chart_wrapper {
+        max-width: 328px;
+        height: 236px;
+    }
+}

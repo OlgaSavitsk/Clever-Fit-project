@@ -1,0 +1,13 @@
+.rate {
+    display: flex;
+    color: var(--ant-rate-color);
+    padding-right: calc(3 * var(--padding-space));
+}
+
+.rate :global .ant-rate-star:not(:last-child) {
+    margin-right: calc(1.5 * var(--margin-space));
+}
+
+.icon {
+    color: var(--ant-rate-color);
+}

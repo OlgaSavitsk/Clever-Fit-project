@@ -1,0 +1,32 @@
+.result_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.status_500 {
+    padding: 64px 32px;
+}
+
+.result_layout :global .ant-result-title {
+    font-size: var(--fs-title);
+    font-weight: var(--fw-m);
+    line-height: 130%;
+    white-space: nowrap;
+}
+
+.result_layout :global .ant-result-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(5 * var(--margin-space));
+    width: 100%;
+}
+
+@media (max-width: 574px) {
+    :global .ant-result-error > .ant-result-title {
+        white-space: pre-line;
+    }
+}

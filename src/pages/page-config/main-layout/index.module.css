@@ -1,0 +1,32 @@
+:root {
+    --padding: var(--pd-24);
+}
+
+.collapsed {
+    left: 0;
+    margin: 51px 0 65px;
+    padding: 0 calc(50% - 32px / 2);
+    text-overflow: clip;
+}
+
+.site_layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: no-repeat center/cover url('../main.jpg');
+    background-attachment: fixed;
+    position: sticky;
+    top: 120px;
+}
+
+.site_layout .layout_background {
+    position: relative;
+    display: flex;
+    padding: var(--padding);
+}
+
+@media (max-width: 480px) {
+    .site_layout .layout_background {
+        --padding: var(--pd-24) var(--pd-16);
+    }
+}

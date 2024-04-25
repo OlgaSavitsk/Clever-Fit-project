@@ -1,0 +1,24 @@
+.formlist_sign {
+    line-height: 35px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+:global .ant-space-item {
+    box-sizing: content-box;
+}
+
+.formlist_sign {
+    margin-right: 3px;
+}
+
+:global .ant-col-xs-offset-1 {
+    margin-right: 3px;
+}
+
+@media (max-width: 480px) {
+    :global .ant-col-xs-offset-1 {
+        margin-right: 3px;
+    }
+}

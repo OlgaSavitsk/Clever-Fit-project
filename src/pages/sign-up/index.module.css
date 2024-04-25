@@ -1,0 +1,29 @@
+.login_form {
+    max-width: 368px;
+    width: 100%;
+    height: 434px;
+}
+
+.form_button {
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+.input :global(.ant-input-group-addon) {
+    padding: 0 15px;
+}
+
+.form_button__item {
+    padding-top: 30px;
+    width: 100%;
+}
+
+@media (max-width: 574px) {
+    .login_form {
+        max-width: 100%;
+        height: 418px;
+    }
+    .form_button__item {
+        padding-top: 23px;
+    }
+}

@@ -1,0 +1,4 @@
+.charts_list__item :global .ant-badge-count {
+    color: var(--ant-primary-6);
+}
+

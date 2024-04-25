@@ -1,0 +1,20 @@
+.loadButton_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+:global .ant-modal-body .ant-result {
+    padding: 24px 0;
+}
+
+@media (max-width: 360px) {
+    :global .ant-modal .ant-result {
+        padding: 0;
+    }
+    :global .ant-modal .ant-result-500 .ant-result-subtitle {
+        margin: 0 50px;
+    }
+    :global .ant-modal .ant-modal-body {
+        padding: 58px 0;
+    }
+}

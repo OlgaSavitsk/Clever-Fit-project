@@ -1,0 +1,12 @@
+.select_form {
+    width: 100%;
+}
+
+.select_form :global .ant-space-item:nth-child(2n) {
+    width: 100%;
+    margin: 0;
+}
+
+.select_form :global .ant-form-item {
+    margin: 0;
+}

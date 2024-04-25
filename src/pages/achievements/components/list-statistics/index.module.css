@@ -1,0 +1,21 @@
+.stat_list {
+    width: 100%;
+
+    & :global .ant-list-header {
+        width: 45%;
+    }
+
+    & :global .ant-list-item {
+        padding: 10px 0;
+    }
+}
+
+.charts_list__item :global .ant-badge-count {
+    color: var(--ant-primary-6);
+}
+
+@media (max-width: 480px) {
+    .stat_list :global .ant-list-header {
+        width: 100%;
+    }
+}

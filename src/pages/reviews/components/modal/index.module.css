@@ -1,0 +1,60 @@
+.modal :global .ant-btn {
+    width: auto;
+}
+
+.modal :global .ant-result-extra {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    padding: 0;
+}
+
+.modal :global .ant-result-title {
+    font-weight: var(--fw-m);
+    font-size: var(--fs-title);
+}
+
+.modal :global .ant-result-500 button {
+    flex-basis: 0;
+}
+
+.modal :global .ant-result {
+    padding: 24px 0;
+}
+
+@media (max-width: 574px) {
+    .modal :global .ant-result {
+        padding: 0;
+    }
+
+    .modal :global .ant-result-extra {
+        margin-top: calc(6 * var(--margin-space));
+    }
+
+    .modal :global .ant-result-500 .ant-result-subtitle {
+        margin: 0 50px;
+    }
+
+    .modal :global .ant-result-500 {
+        padding: 20px 0;
+    }
+
+    .modal :global .ant-result-subtitle {
+        letter-spacing: -0.2px;
+    }
+
+    .modal :global .ant-result-title {
+        line-height: var(--line-height);
+        letter-spacing: -0.2px;
+    }
+
+    :global(.ant-result-500 > .ant-result-subtitle) {
+        display: inline-block;
+        white-space: pre-line;
+        text-align: center;
+        margin: 0 50px;
+        line-height: 1.4;
+    }
+}

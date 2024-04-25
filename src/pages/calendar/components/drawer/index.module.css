@@ -1,0 +1,48 @@
+:root {
+    --borderRadius: calc(2 * var(--border-radius));
+}
+
+.drawer {
+    padding: var(--pd-24);
+    z-index: 1;
+}
+
+.drawer :global .ant-drawer-header {
+    border: none;
+    padding: var(--pd-24);
+    padding-bottom: 0;
+}
+
+.drawer_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--ant-default);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.drawer_button :global .ant-btn.ant-btn-block {
+    width: 50%;
+}
+
+.drawer_form :global .ant-form-item {
+    margin-bottom: 0;
+}
+
+.drawer_form :global .ant-tag {
+    width: 100%;
+    height: 24px;
+    margin-right: 0;
+    background: var(--ant-default);
+}
+
+@media (max-width: 480px) {
+    :root {
+        --borderRadius: calc(6 * var(--border-radius))
+    }
+    .drawer {
+        padding: var(--pd-16);;
+        top: 80px;
+    }
+}

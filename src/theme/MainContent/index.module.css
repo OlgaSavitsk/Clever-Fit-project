@@ -1,0 +1,35 @@
+.ant-card-head-title {
+    padding: 9px 0;
+    white-space: wrap;
+    line-height: 1.4;
+}
+
+.ant-card-meta-title > a {
+    padding: 0;
+}
+
+.ant-card-meta-detail > div:not(:last-child) {
+    margin-bottom: 0;
+}
+
+@media (max-width: 863px) {
+    .ant-card-actions > li > span {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 754px) {
+    footer .ant-space-item {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .ant-card-body {
+        padding: 16px 21px 16px 16px !important;
+    }
+}

@@ -1,0 +1,7 @@
+.main_content {
+    width: '100%';
+}
+
+.main_content :global .ant-typography p {
+    margin: 0;
+}

@@ -1,0 +1,62 @@
+:root {
+    --padding: calc(3 * var(--padding-space));
+    --margin: calc(4 * var(--margin-space));
+    --borderRadius: calc(2 * var(--border-radius));
+}
+
+.profile_layout {
+    position: relative;
+    background: var(--ant-form-background);
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+}
+
+.profile_form {
+    max-width: 480px;
+    width: 100%;
+}
+
+.profile_form :global .ant-col-lg-18 > .ant-form-item {
+    margin-bottom: var(--margin);
+}
+
+.profile_form :global .ant-form-item-with-help .ant-form-item-control {
+    margin-bottom: var(--margin);
+}
+
+:global .ant-upload.ant-upload-select-picture-card {
+    margin: 0;
+}
+
+:global .ant-upload {
+    line-height: var(--line-height);
+}
+
+@media (max-width: 480px) {
+    .profile_layout {
+        padding: calc(4 * var(--padding-space)) var(--padding);
+        margin: 0 -16px;
+        border-radius: 0;
+    }
+
+    .upload_item {
+        margin-bottom: 0;
+    }
+
+    .profile_form :global label > span {
+        font-size: var(--fs-sm);
+    }
+
+    .profile_form :global .ant-form-item-with-help {
+        margin-bottom: var(--margin);
+    }
+
+    .upload_item :global .ant-form-item-control-input-content > span {
+        width: 100%;
+        font-size: var(--fs-text);
+    }
+
+    :global .ant-upload {
+        width: 100%;
+    }
+}

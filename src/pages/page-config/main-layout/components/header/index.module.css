@@ -1,0 +1,70 @@
+:root {
+    --fs-title-main: calc(var(--fs-base) * 1.5);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background: var(--ant-primary-1);
+}
+
+.button_trigger {
+    position: fixed;
+    top: 47vh;
+    width: 20px;
+    height: 66px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+    transition: transform 0.3s;
+    z-index: 2;
+}
+
+.trigger {
+    font-size: 13px;
+    line-height: 64px;
+    color: #8c8c8c;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: var(--ant-primary-color);
+}
+
+.button_trigger__mobile {
+    position: fixed;
+    width: 32px;
+    height: 48px;
+    top: 3vh;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+    transition: transform 0.3s;
+    z-index: 2;
+}
+
+@media (max-width: 834px) {
+
+    :global .ant-btn > .anticon[data-header-title=home-title] {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header :global .ant-page-header-heading {
+        flex-wrap: nowrap !important;
+    }
+
+    :global h1.ant-typography {
+        --fs-title-main: calc(var(--fs-base) * 1.25);
+    }
+
+    .ant-breadcrumb + .ant-page-header-heading {
+        margin-top: 0;
+    }
+}

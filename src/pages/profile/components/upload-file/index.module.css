@@ -1,0 +1,5 @@
+.upload_button {
+    margin-top: calc(2 * var(--margin-space));
+    padding: 0 calc(2.5 * var(--padding-space));
+    color: var(--ant-text);
+}

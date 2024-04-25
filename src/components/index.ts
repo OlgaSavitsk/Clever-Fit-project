@@ -1,0 +1,7 @@
+export { ButtonModal} from './button'
+export { IconExit} from './icon-exit'
+export { Loader} from './loader'
+export { RateComponent} from './rate'
+export { TabsComponent } from './tabs'
+export { FormAuthList } from './form-auth-list'
+export { ButtonSettings } from './button-settings'

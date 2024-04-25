@@ -1,0 +1,118 @@
+.list {
+    width: 100%;
+}
+
+.comment {
+    padding: 0 16px;
+    background-color: var(--ant-form-background);
+    box-shadow: var(----box-shadow);
+}
+
+.avatar {
+    flex-direction: column;
+    align-items: center;
+    max-width: 174px;
+    width: 100%;
+    padding: 0 35px;
+}
+
+.list :global .ant-list-items {
+    max-height: 734px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.comment :global(.ant-comment-content-author-name) {
+    pointer-events: none;
+}
+
+.comment :global(.ant-comment-content-author) {
+    margin-bottom: calc(2 * var(--margin-space));
+}
+
+.list :global(.ant-list-items) {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(2 * var(--gap));
+}
+
+.avatar :global(.ant-card-meta-title) {
+    text-align: center;
+    font-weight: var(--fw-l);
+    color: var(--ant-button-download);
+    white-space: pre-line;
+}
+
+.avatar :global(.ant-card-meta-avatar) {
+    padding: 0;
+    margin-bottom: calc(3 * var(--margin-space));
+}
+
+.avatar :global(.ant-card-meta-title) {
+    word-break: keep-all;
+    text-overflow: clip;
+    padding: 0 25px;
+    line-height: var(--line-height);
+}
+
+.avatar :global(img) {
+    width: 42px;
+    height: 42px;
+}
+
+.date {
+    display: flex;
+    color: var(--ant-text-secondary);
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.content {
+    display: inline-block;
+    line-height: var(--line-height);
+    color: var(--ant-text);
+}
+
+@media (max-width: 574px) {
+    .avatar {
+        flex-direction: row;
+        padding: 0;
+        min-width: 150px;
+    }
+    .comment :global .ant-comment-inner {
+        flex-direction: column;
+    }
+    .comment :global(.ant-comment-content-author) {
+        margin: 8px 0 13px;
+    }
+    .list :global(.ant-list-items) {
+        row-gap: calc(.8 * var(--fs-base));
+    }
+
+    .list :global .ant-space-item {
+        width: 100%;
+        text-align: center;
+
+        & button {
+            width: 100%;
+        }
+    }
+
+    .avatar :global(.ant-card-meta-avatar) {
+        margin-bottom: 0;
+    }
+
+    .avatar :global(.ant-card-meta-title) {
+        word-break: keep-all;
+        text-align: start;
+        text-overflow: clip;
+        padding: 0 25px;
+    }
+
+    .comment :global .ant-card-meta {
+        margin-bottom: calc(3 * var(--margin-space));
+    }
+}

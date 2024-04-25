@@ -1,0 +1,68 @@
+:root {
+    --padding: var(--pd-24);
+    --margin: calc(6 * var(--margin-space));
+}
+
+.settings_background {
+    margin: calc(-6 * var(--margin-space));
+}
+
+.settings_layout {
+    position: relative;
+    background: var(--ant-form-background);
+    padding: var(--padding);
+    margin: var(--margin);
+}
+
+.setting_wrapper {
+    max-width: 505px;
+    width: 100%;
+}
+
+.settings_form :global .ant-form-item-control-input-content {
+    justify-content: flex-end;
+}
+
+.settings_form :global .ant-form-item-label > label:after {
+    content: '';
+}
+
+.settings_form :global .ant-form-item {
+    margin-bottom: 0;
+}
+
+.loadButton_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+:global .ant-card-extra .ant-btn-link {
+    padding: 0;
+}
+
+:global .ant-tag-default {
+    border: none;
+}
+
+@media (max-width: 480px) {
+    .settings_background {
+        margin: calc(-6 * var(--margin-space)) calc(-4 * var(--margin-space));
+    }
+
+    .settings_layout {
+        padding: var(--pd-16) var(--padding);
+        margin: var(--margin) 0;
+    }
+
+    .setting_wrapper {
+        max-width: 312px;
+    }
+
+    .settings_form :global .ant-row > .ant-form-item-control {
+        flex-basis: 40%;
+    }
+
+    .loadButton_wrapper :global .ant-space-item {
+        width: 100%;
+    }
+}

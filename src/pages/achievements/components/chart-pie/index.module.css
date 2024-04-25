@@ -1,0 +1,15 @@
+.chart_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 520px;
+    width: 100%;
+}
+
+
+@media (max-width: 480px) {
+    .chart_wrapper {
+        max-width: 328px;
+        height: 236px;
+    }
+}

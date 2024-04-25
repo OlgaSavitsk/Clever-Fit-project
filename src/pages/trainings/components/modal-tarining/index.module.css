@@ -1,0 +1,65 @@
+.events {
+    min-height: 84px;
+    max-height: 140px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: scroll;
+}
+
+.overlay {
+    width: 240px;
+    z-index: 0;
+}
+
+.overlay :global .ant-popover-inner-content {
+    width: 100%;
+    padding: 0 var(--paddingRight) var(--paddingRight);
+}
+
+.overlay :global tbody {
+    padding-top: var(--paddingRight);
+}
+
+.overlay :global .ant-popover-title{
+    border: none;
+}
+
+.overlay :global .ant-divider-horizontal {
+    width: 110%;
+    margin: 10px -10px;
+}
+
+.popover_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.modal_training {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+@media (max-width: 480px) {
+    .modal_training {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 40px;
+        z-index: 0;
+    }
+
+    .overlay {
+        width: 100vh;
+    }
+
+    .overlay :global .ant-popover-inner-content {
+        min-width: 316px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

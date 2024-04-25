@@ -1,0 +1,119 @@
+:root {
+    --border-message: 2px 16px 16px 16px
+}
+.list {
+    width: 100%;
+    padding-top: var(--pd-16);
+}
+
+.comment {
+    padding: 0 calc(5 * var(--padding-space));
+    background-color: var(--ant-form-background);
+    border-radius: var(--border-message);
+    box-shadow: var(--box-shadow);
+}
+
+.avatar {
+    flex-direction: column;
+    align-items: center;
+    max-width: 174px;
+    width: 100%;
+    padding: 0 35px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.comment :global(.ant-comment-content-author-name) {
+    pointer-events: none;
+}
+
+.comment :global(.ant-comment-content-author) {
+    margin-bottom: calc(2 * var(--margin-space));
+}
+
+.comment :global(.ant-comment-actions) {
+    margin-top: 0;
+}
+
+.list :global(.ant-list-items) {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(.8 * var(--gap));
+    max-height: 440px;
+    border-radius: var(--border-message);
+    overflow-y: scroll;
+}
+
+.avatar :global img {
+    width: 42px;
+    height: 42px;
+}
+
+.avatar :global .ant-list-item-meta-content {
+    width: 100%;
+    text-align: center;
+}
+
+.avatar :global .ant-list-item-meta-avatar {
+    margin-right: 0;
+    margin-bottom: var(--pd-16);
+}
+
+.avatar :global .ant-space-compact p {
+    margin-bottom: var(--padding-space);
+}
+
+:global(.ant-btn-compact-vertical-item:not(.ant-btn-compact-vertical-last-item)) {
+    margin-bottom: calc(3 * var(--padding-space));
+}
+
+.message_wrapper {
+    padding: var(--pd-16) var(--pd-24);
+    background: var(--background);
+}
+
+.date {
+    display: flex;
+    color: var(--ant-text-secondary);
+    font-size: var(--fs-sm);
+}
+
+.content {
+    display: inline-block;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-b);
+    color: var(--ant-primary-9);
+}
+
+@media (max-width: 835px) {
+    .list {
+        max-width: 509px;
+    }
+
+    .avatar {
+        flex-direction: row;
+        min-width: 150px;
+        padding: 0;
+        margin-bottom: var(--pd-16);
+    }
+
+    .content {
+        text-align: left;
+    }
+
+    .comment :global .ant-comment-inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .message_wrapper {
+        padding: var(--pd-16) var(--pd-12);
+    }
+
+    .comment {
+        padding: 0 var(--pd-12);
+    }
+}

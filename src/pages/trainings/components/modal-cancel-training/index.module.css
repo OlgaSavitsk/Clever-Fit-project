@@ -1,0 +1,5 @@
+.modal_meta :global .ant-list-item-meta-title {
+    width: 65px;
+    margin: 0;
+    text-align: start;
+}

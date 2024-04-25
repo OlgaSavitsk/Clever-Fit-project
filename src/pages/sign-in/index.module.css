@@ -1,0 +1,44 @@
+.login_form {
+    width: 100%;
+    height: 490px;
+}
+
+.form_button {
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+.form_button__item {
+    width: 100%;
+
+    & :global(.ant-form-item) {
+        width: 100%;
+    }
+}
+
+.input :global(.ant-input-group-addon) {
+    padding: 0 15px;
+}
+
+.checkbox {
+    padding-top: 13px;
+    &:global(.ant-form-item) {
+        margin-bottom: 18px;
+    }
+}
+
+.checkbox :global .ant-btn-link {
+    padding: 0;
+}
+
+@media (max-width: 361px) {
+    .login_form {
+        max-width: 100%;
+        height: 465px;
+    }
+    .checkbox {
+        &:global(.ant-form-item) {
+            margin-bottom: 11px;
+        }
+    }
+}

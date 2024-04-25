@@ -1,0 +1,65 @@
+@import url('./theme/index.module.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --fs-base: 1rem;
+    --fs-title: calc(var(--fs-base) * 1.5);
+    --fs-text: calc(var(--fs-base) * 0.875);
+    --fs-sm: calc(var(--fs-base) * 0.75);
+    --fw-l: 400;
+    --fw-m: 500;
+    --fw-b: 700;
+    --line-height: 1.3;
+    --ant-primary-1: #f0f5ff;
+    --ant-primary-5: #597ef7;
+    --ant-primary-6: #2f54eb;
+    --ant-primary-7: #1d39c4;
+    --ant-primary-9: #061178;
+    --ant-primary-10: #030852;
+    --ant-button-download: #262626;
+    --ant-form-background: #fff;
+    --ant-rate-color: #faad14;
+    --ant-text: #8c8c8c;
+    --ant-text-secondary: #bfbfbf;
+    --ant-default: #f0f0f0;
+    --ant-default-avatar: #f5f5f5;
+    --charts-field: #85a5ff;
+    --tariff: #52C41A;
+    --mask-bg: rgba(121, 156, 212, 0.1);
+    --mask-modal-bg: rgba(121, 156, 212, 0.5);
+    --spacing: 20px;
+    --margin-space: calc(0.2 * var(--spacing));
+    --padding-space: calc(0.2 * var(--spacing));
+    --pd-12: calc(3 * var(--padding-space));
+    --pd-16: calc(4 * var(--padding-space));
+    --pd-24: calc(6 * var(--padding-space));
+    --gap: 10px;
+    --border-radius: 4px;
+    --border-width: 2px;
+    --shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: var(--fw-l);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.ant-btn-primary {
+    background: var(--ant-primary-6);
+}
+
+.ant-typography.ant-typography-secondary {
+    color: var(--ant-text);
+}
+
+.ant-popover {
+    z-index: 1;
+}
